@@ -1,16 +1,23 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">);
+  @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
 /* css custom properties */
 :root {   
  --my-brand-color: #198754;   
- --my-special-btn-color: #333;
- --my-special-search-btn-background-color:ivory;   
+ --my-special-btn-color: ivory;
+ --my-special-search-btn-background-color:#00603f;   
     --my-accent-color-light: palegreen;
     --my-accent-color-dark: royalblue;
  /*--bs-dark-rgb: 25,135,84 !important; */
-
+}
+    
+h1 {font-family: 'Sigmar', sans-serif}
+.navbar-brand img {
+    height: 40px
 }
 header {
-height: 56px;  
+height: 66px;  
 }
 nav[data-bs-theme="dark"]{
   background:var(--my-brand-color); 
@@ -46,12 +53,13 @@ nav[data-bs-theme="dark"]{
 }
 
 
+
 a.active {
   border-bottom: 1px solid var(--my-brand-color) ;
 }
 
 .my-special-hero {    
-    background-image: url(https://picsum.photos/seed/picsum/1200/800);
+    background-image: url(../images/recycling.illustration.png);
     background-position: center;
     background-size: cover;
 }
